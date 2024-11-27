@@ -1,14 +1,8 @@
-# vue-app-with-library
+# Vue App with Library
 
-This template should help get you started developing with Vue 3 in Vite.
+This is an example of a Vue app where components can be exported as a package to be included in other projects.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+It is a new project created using `npm init vue@latest` and then tweaked to export the HelloWorld.vue component following the steps in the [Vite Library Mode](https://vite.dev/guide/build#library-mode) docs.
 
 ## Project Setup
 
@@ -16,14 +10,20 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compile app and Hot-Reload for Development
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compile app and Minify for Production
 
 ```sh
 npm run build
+```
+
+### Build library
+
+```sh
+npm run build-lib
 ```
