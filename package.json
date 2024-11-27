@@ -1,11 +1,22 @@
 {
   "name": "vue-app-with-library",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/my-lib.umd.cjs",
+  "module": "./dist/my-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.js",
+      "require": "./dist/my-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build-lib": "vite build --config vite.lib-config.js",
     "preview": "vite preview"
   },
   "dependencies": {
